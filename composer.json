@@ -1,0 +1,37 @@
+{
+  "description": "TODO?",
+  "homepage": "https://github.com/sadikoff/test-environment",
+  "name": "koff/test-environment",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["test", "environment"],
+  "authors": [
+    {
+      "name": "Vladimir Sadicov",
+      "email": "sadikoff@gmail.com",
+      "homepage": "https://koff.pro"
+    }
+  ],
+  "require": {
+    "php": "^7.0.8"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.8",
+    "symfony/phpunit-bridge": "^3.4|^4.0"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": { "Koff\\": "src/" }
+  },
+  "autoload-dev": {
+    "psr-4": { "Koff\\Tests\\": "tests/" }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
